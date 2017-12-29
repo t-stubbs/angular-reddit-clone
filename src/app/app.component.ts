@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  public addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
+    console.log(`Adding artcle title: ${title.value} and link: ${link.value}`);
+    return false;
+  }
 }
